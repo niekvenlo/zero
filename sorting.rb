@@ -1,7 +1,7 @@
 class Array
   def bubble_sort1(&block)
     a = self.dup
-    block = lambda { |num1, num2| num1 <=> num2 } unless block_given?
+    block = -> (num1, num2) { num1 <=> num2 } unless block_given?
     sorted = false
     until sorted == true
       sorted = true
@@ -49,7 +49,7 @@ class Array
     a
   end
 
-  alias_method :bubble_sort, :bubble_sort3
+  alias_method :bubble_sort, :bubble_sort1 # Switch between versions of bubble_sort
 end
 
 puts "\nSort using the default sorting criteria:"
