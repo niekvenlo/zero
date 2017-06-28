@@ -1,12 +1,52 @@
+<style>
+p {
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: yellow;
+  margin: auto;
+  padding: auto;
+  border-style: dotted;
+  border-color: black;
+  border-width: 50px;
+  border-radius: 200px;
+}
+p.five {
+  background: green;
+}
+div {
+  display: inline-block;
+  border-style: dotted;
+  border-color: blue;
+  border-width: 10px;
+  border-radius: 50px;
+}
+</style>
 <script src="jquery-3.2.1.min.js"></script>
 <script>
-function sum(a,b) {
-  return a + b
-}
-
 $(function() {
-  document.body.innerHTML = sum(3,4)
-})
+  // $('#four').before($('#one'));
+  var blee = 'Five'
+  // $('p').after('<p class=\'five\'>..'+blee+'</p>');
+  // $('p').click(function(){
+  //   var flee = Math.random();
+  //   $(this).animate({
+  //     top: 250*Math.random()+'px',
+  //     opacity: Math.random()
+  //   });
+  // });
+  function fff() {
+    $('p').remove();
+  }
+
+  setTimeout(fff ,20000);
+
+});
 </script>
 <body>
+  <p id='one'>One<div id='f'>FF</div>DD</p>
+  <p id='two'>Two</p>
+  <p id='three'>Three</p>
+  <p id='four'>Four</p>
 </body>
