@@ -5,16 +5,19 @@
 <script src="script.js"></script>
 <style>
   body {
-    animation: shapeshift 6s infinite;
+    font-family: monospace;
+    font-size: 1.5em;
+    animation: shapeshift 30s infinite;
+  }
+  #ball {
+    background-color: white;
+    display: inline-block;
+    padding: 1em;
   }
 @keyframes shapeshift {
-  0%, 100% {
-        background-color: #9F33FF;
-    }
-  40% {
-        /*border-radius: 0px;*/
-        background-color: #D733FF;
-    }
+  0%, 100%  { background-color: #9F33FF; }
+  50%       { background-color: #D733FF; }
+  70%       { background-color: #FF82B4; }
 }
 </style>
 </head>

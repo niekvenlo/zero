@@ -1,16 +1,4 @@
-#
-# RSpec.describe "Range" do
-#   it "covers a range" do
-#     expect(1..10).to cover(3)
-#   end
-# end
+p [0,4,7].count { |e| !e.nil? }
 
-def dd
-  p 'dd'
-  def ee
-    "fff"
-  end
-end
 
-p dd::ee
-p ee
+p [3,2].map(&to_s.to_proc)
